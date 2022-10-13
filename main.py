@@ -111,6 +111,8 @@ def main():
             case _:
                 continue
         execute(cursor, req)
+    cursor.close()
+    connection.close()
 
 
 if __name__ == "__main__":
